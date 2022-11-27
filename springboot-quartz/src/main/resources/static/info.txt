@@ -1,0 +1,14 @@
+#add job请求体
+{
+  "concurrent": "1",
+  "cronExpression": "0/10 * * * * ?",
+  "invokeTarget": "myJob.execute('hello')",
+  "jobGroup": "myJob",
+  "jobId": 10086,
+  "jobName": "新增 myJob 任务",
+  "misfirePolicy": "1",
+  "remark": "",
+  "status": "0"
+}
+
+#Swagger UI: http://localhost:8080/swagger-ui.html#/
