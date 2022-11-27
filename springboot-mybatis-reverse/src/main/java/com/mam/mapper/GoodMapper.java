@@ -1,7 +1,11 @@
 package com.mam.mapper;
 
 import com.mam.entity.Good;
+import org.apache.ibatis.annotations.Mapper;
+import org.springframework.stereotype.Component;
 
+@Mapper
+@Component
 public interface GoodMapper {
     int deleteByPrimaryKey(Integer id);
 

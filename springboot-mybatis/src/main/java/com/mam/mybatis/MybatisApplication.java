@@ -1,4 +1,4 @@
-package com.mam;
+package com.mam.mybatis;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
@@ -9,8 +9,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @Date 2022/11/27
  **/
 @SpringBootApplication
-public class ReverseMybatisApplication {
+public class MybatisApplication {
+
     public static void main(String[] args) {
-        SpringApplication.run(ReverseMybatisApplication.class,args);
+        SpringApplication.run(MybatisApplication.class,args);
     }
 }
