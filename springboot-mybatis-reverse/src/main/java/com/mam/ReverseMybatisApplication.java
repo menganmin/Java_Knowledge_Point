@@ -9,9 +9,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @Date 2022/11/27
  **/
 @SpringBootApplication
-@MapperScan("com.mam.dao")
-public class TkMybatisApplication {
+@MapperScan("com.mam.mapper")
+public class ReverseMybatisApplication {
     public static void main(String[] args) {
-        SpringApplication.run(TkMybatisApplication.class,args);
+        SpringApplication.run(ReverseMybatisApplication.class,args);
     }
 }

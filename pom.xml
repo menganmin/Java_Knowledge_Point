@@ -22,7 +22,7 @@
         <module>springboot-quartz</module>
         <module>springboot-mybatis</module>
         <module>springboot-swagger2</module>
-        <module>springboot-tkmybatis</module>
+        <module>springboot-mybatis-reverse</module>
     </modules>
     <dependencies>
         <dependency>
