@@ -26,3 +26,17 @@ JobDetail 的作用是绑定 Job，是一个任务实例，它为 Job 添加了�
 > 这是因为任务是有可能并发执行，如果Scheduler直接使用Job，就会存在对同一个Job实例并发访问的问题。
 >
 > 而JobDetail & Job 方式，Sheduler每次执行，都会根据JobDetail创建一个新的Job实例，这样就可以 **规避并发访问** 的问题。
+###add job请求体
+ {
+   "concurrent": "1",
+   "cronExpression": "0/10 * * * * ?",
+   "invokeTarget": "myJob.execute('hello')",
+   "jobGroup": "myJob",
+   "jobId": 10086,
+   "jobName": "新增 myJob 任务",
+   "misfirePolicy": "1",
+   "remark": "",
+   "status": "0"
+ }
+ 
+###Swagger UI: http://localhost:8080/swagger-ui.html#/
