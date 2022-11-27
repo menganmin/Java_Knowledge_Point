@@ -8,8 +8,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @Date 2022/11/27
  **/
 @SpringBootApplication
-public class QuartzApplication {
+public class SwaggerApplication {
     public static void main(String[] args) {
-        SpringApplication.run(QuartzApplication.class, args);
+        SpringApplication.run(SwaggerApplication.class,args);
     }
 }

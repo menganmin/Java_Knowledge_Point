@@ -1,5 +1,6 @@
 package com.mam;
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -8,8 +9,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @Date 2022/11/27
  **/
 @SpringBootApplication
-public class QuartzApplication {
+@MapperScan("com.mam.dao")
+public class TkMybatisApplication {
     public static void main(String[] args) {
-        SpringApplication.run(QuartzApplication.class, args);
+        SpringApplication.run(TkMybatisApplication.class,args);
     }
 }
