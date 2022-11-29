@@ -2,6 +2,7 @@ package com.mam;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.mam.entity.User;
+import com.mam.utils.RedisUtil;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -22,9 +23,11 @@ public class SpringDataRedisApplicationTest {
     @Resource
     private RedisTemplate redisTemplate;
 
-    //Spring默认提供了一个StringRedisTemplate类，它的key和value的序列化方式默认就是String方式。省去了我们自定义RedisTemplate的过程
     @Resource
     private StringRedisTemplate stringRedisTemplate;
+
+    @Resource
+    private RedisUtil redisUtil;
 
     @Test
     public void insertStrDataTest(){
@@ -59,5 +62,11 @@ public class SpringDataRedisApplicationTest {
         }catch (Exception e){
             e.printStackTrace();
         }
+    }
+
+    @Test
+    public void deleteKey(){
+        redisUtil.delete("1","2");
+        System.out.println("delete success");
     }
 }
