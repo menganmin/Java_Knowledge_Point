@@ -1,16 +1,15 @@
-package com.mam.mybatis;
+package com.mam;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
  * @Author Anmin
- * @Date 2022/11/27
+ * @Date 2022/11/30
  **/
 @SpringBootApplication
-public class MybatisApplication {
-
+public class AopApplication {
     public static void main(String[] args) {
-        SpringApplication.run(MybatisApplication.class,args);
+        SpringApplication.run(AopApplication.class,args);
     }
 }
