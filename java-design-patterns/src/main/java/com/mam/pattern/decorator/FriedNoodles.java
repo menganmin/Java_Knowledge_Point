@@ -1,0 +1,17 @@
+package com.mam.pattern.decorator;
+
+/**
+ * @Author Anmin
+ * @Date 2022/12/06
+ * 具体构件角色
+ **/
+public class FriedNoodles extends FastFood{
+
+    public FriedNoodles(){
+        super(12,"炒面");
+    }
+    @Override
+    public float cost() {
+        return getPrice();
+    }
+}
