@@ -27,6 +27,7 @@
         <module>springboot-async</module>
         <module>java-design-patterns</module>
         <module>spring-div</module>
+        <module>java-data-structures</module>
     </modules>
     <dependencies>
         <dependency>
