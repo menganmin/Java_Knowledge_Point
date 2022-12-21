@@ -10,6 +10,6 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>java-data-structures</artifactId>
-
+    <description>数据结构跟算法</description>
 
 </project>
